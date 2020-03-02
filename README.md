@@ -1,2 +1,2 @@
 # rock-paper-scissors-master
-A Rock,paper,scissors game built with javascript
+A rock,paper,scissors game built with javascript
