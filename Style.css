@@ -1,9 +1,20 @@
+@media (max-width: 575.98px) {
+    .row{
+        width: auto !important;
+    }
+    .body{
+        margin: -10px !important;
+    }
+    .content{
+        margin: 0px !important;
+    }
+    
+}
 .body{
-    height: 100vh;
+    height: auto;
     width: auto;
     background-image: Radial-Gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
     color: white;
-    position: relative;
 }
 h2{
     margin-top: -5px;
@@ -76,7 +87,7 @@ h3{
     margin-right: auto;
     margin-top: 1.8rem;
 }
-.paper:hover, .rock:hover, .scissors:hover{
+.paper:hover, .rock:hover, .scissors:hover, .fa-close:hover{
     cursor: pointer;
 }
 button:hover{
@@ -115,14 +126,33 @@ button{
     color: white;
     border-radius: 10px;
     padding: 10px 30px;
-    /* margin-bottom: 20px; */
 }
 .footer{
     text-align: right;
     margin-right: 20px;
+    padding-bottom: 20px;
+}
+.my-rules{
+    display: none;
 }
 .rules{
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    position: relative;
+    position: fixed;
+    top: 200px;
+    left: 570px;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+}
+.div-rules{
+    margin-top: 50px;
+}
+.roww{
+    display: flex;
+    flex-direction: row;
+}
+.coll{
+    margin-left: auto;
 }
