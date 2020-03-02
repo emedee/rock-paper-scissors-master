@@ -11,7 +11,7 @@
     
 }
 .body{
-    height: auto;
+    height: 100vh;
     width: auto;
     background-image: Radial-Gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
     color: white;
@@ -70,10 +70,46 @@ h3{
     margin-right: 100px;
     margin-top: -38px;
     border: 20px solid hsl(230, 89%, 65%);
-    /* border-image:  radial-gradient(hsl(230, 89%, 62%), hsl(230, 89%, 65%)) */
     
 }
+.paper-select{
+    background-color: white;
+    border-radius: 50%;
+    width: 7rem;
+    height: 7rem;
+    margin-left: 5px;
+    margin-top: 4px;
+    border: 20px solid hsl(230, 89%, 65%);
+    display: none;
+}
+.rock-select{
+    background-color: white;
+    border-radius: 50%;
+    width: 7rem;
+    height: 7rem;
+    margin-left: 5px;
+    margin-top: 4px;
+    border: 20px solid hsl(349, 70%, 56%);
+    display: none;
+}
+.scissors-select{
+    background-color: white;
+    border-radius: 50%;
+    width: 7rem;
+    height: 7rem;
+    margin-left: 5px;
+    margin-top: 4px;
+    border: 20px solid hsl(40, 84%, 53%);
+    display: none;
+}
 .target{
+    display: flex;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.3rem;
+}
+.target1{
     display: flex;
     text-align: center;
     margin-left: auto;
@@ -101,7 +137,6 @@ button:hover{
     border-radius: 50%;
     width: 7rem;
     height: 7rem;
-    margin-right: 170px;
     margin-top: -38px;
     border: 20px solid hsl(40, 84%, 53%);
 }
@@ -110,15 +145,32 @@ button:hover{
     border-radius: 50%;
     width: 7rem;
     height: 7rem;
-    margin-left: -220px;
-    margin-top: 130px;
+    margin-top: auto;
+    margin-left: -280px;
     border: 20px solid hsl(349, 70%, 56%);
 }
 .content{
     display: flex;
     justify-content: center;
     margin-top: 8rem;
-    margin-left: 200px;
+    margin-right: 100px;
+}
+.select{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px 50px;
+}
+.selected{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 15px;
+    font-weight: bolder;
+}
+.content2{
+    display: none;
+    justify-content: center;
+    margin-top: 8rem;
 }
 button{
     background: transparent;
@@ -134,6 +186,43 @@ button{
 }
 .my-rules{
     display: none;
+}
+.you-picked{
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+    background-color: hsl(238, 51%, 10%);
+    margin-left: auto;
+    margin-right: auto;
+}
+.house-picked{
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+    background-color: hsl(238, 51%, 10%);
+    margin-left: auto;
+    margin-right: auto;
+}
+.show-result{
+    display: none;
+}
+.result{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0px 70px;
+}
+.btn-playAgain{
+    font-weight: bold;
+    cursor: pointer;
+    color: hsl(237, 49%, 15%);
+    background-color: white;
+    border-color:  hsl(237, 49%, 15%);
+}
+.btn-playAgain:hover{
+    color: red;
+    border-radius: 10px;
+    padding: 10px 30px;
 }
 .rules{
     display: flex;
