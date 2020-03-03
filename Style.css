@@ -97,6 +97,9 @@
     .select{
         margin: 0px 20px !important;
     }
+    .header{
+        padding-top: 10px !important;
+    }
 }
 body{
     background-image: Radial-Gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
