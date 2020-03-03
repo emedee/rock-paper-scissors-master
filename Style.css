@@ -57,9 +57,9 @@
     }
     .score{
         width: 3rem !important;
-        height: 3rem !important;
+        height: 2.6rem !important;
         padding: 6px !important;
-        margin-top: -17px !important;
+        margin-top: -13px !important;
     }
     .p-score{
         font-size: 10px;
@@ -71,8 +71,8 @@
         font-size: 30px !important;
     }
     .col{
-        width: 100px !important;
-        height: 60px !important;
+        width: 80px !important;
+        height: 50px !important;
         display: flex;
         align-self: center;
     }
@@ -82,7 +82,7 @@
     }
     .rules{
         position: fixed;
-        top: 220px !important;
+        top: 110px !important;
         left: 10px !important;
         right: 15px !important;
     }
