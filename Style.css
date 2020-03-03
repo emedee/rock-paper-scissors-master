@@ -58,6 +58,7 @@
     .score{
         width: 4rem !important;
         height: 3.5rem !important;
+        padding: 12px !important;
     }
     h3{
         font-size: 30px !important;
