@@ -65,6 +65,8 @@
     .col{
         width: 100px !important;
         height: 60px !important;
+        display: flex;
+        align-self: center;
     }
     .row{
         height: auto !important;
