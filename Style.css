@@ -102,6 +102,36 @@ h3{
     border: 20px solid hsl(40, 84%, 53%);
     display: none;
 }
+.paper-select-house{
+    background-color: white;
+    border-radius: 50%;
+    width: 7rem;
+    height: 7rem;
+    margin-left: 5px;
+    margin-top: 4px;
+    border: 20px solid hsl(230, 89%, 65%);
+    display: none;
+}
+.rock-select-house{
+    background-color: white;
+    border-radius: 50%;
+    width: 7rem;
+    height: 7rem;
+    margin-left: 5px;
+    margin-top: 4px;
+    border: 20px solid hsl(349, 70%, 56%);
+    display: none;
+}
+.scissors-select-house{
+    background-color: white;
+    border-radius: 50%;
+    width: 7rem;
+    height: 7rem;
+    margin-left: 5px;
+    margin-top: 4px;
+    border: 20px solid hsl(40, 84%, 53%);
+    display: none;
+}
 .target{
     display: flex;
     text-align: center;
