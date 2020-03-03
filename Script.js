@@ -35,10 +35,16 @@ rock.addEventListener('click', function(){
     test.style.display = 'block';
     if(test == paperSelectHouse){
         loseOrWin.innerHTML = 'YOU LOSE'
+        rockSelectHouse.style.display = 'none'
+        scissorsSelectHouse.style.display = 'none'
     } else if (test == scissorsSelectHouse){
         loseOrWin.innerHTML = 'YOU WIN'
+        rockSelectHouse.style.display = 'none'
+        paperSelectHouse.style.display = 'none'
     } else {
         loseOrWin.innerHTML = 'TIE'
+        paperSelectHouse.style.display = 'none'
+        scissorsSelectHouse.style.display = 'none'
     }
     result.style.display = 'flex';
 })
@@ -52,10 +58,16 @@ paper.addEventListener('click', function(){
     test.style.display = 'block';
     if(test == scissorsSelectHouse){
         loseOrWin.innerHTML = 'YOU LOSE'
+        rockSelectHouse.style.display = 'none'
+        paperSelectHouse.style.display = 'none'
     } else if (test == rockSelectHouse){
         loseOrWin.innerHTML = 'YOU WIN'
+        paperSelectHouse.style.display = 'none'
+        scissorsSelectHouse.style.display = 'none'
     } else {
         loseOrWin.innerHTML = 'TIE'
+        scissorsSelectHouse.style.display = 'none'
+        rockSelectHouse.style.display = 'none'
     }
     result.style.display = 'block';
 })
@@ -69,13 +81,21 @@ scissors.addEventListener('click', function(){
     test.style.display = 'block';
     if(test == rockSelectHouse){
         loseOrWin.innerHTML = 'YOU LOSE'
+        paperSelectHouse.style.display = 'none'
+        scissorsSelectHouse.style.display = 'none'
     } else if (test == paperSelectHouse){
         loseOrWin.innerHTML = 'YOU WIN'
+        rockSelectHouse.style.display = 'none'
+        scissorsSelectHouse.style.display = 'none'
     } else {
         loseOrWin.innerHTML = 'TIE'
+        rockSelectHouse.style.display = 'none'
+        paperSelectHouse.style.display = 'none'
     }
     result.style.display = 'flex';
 })
 playAgain.addEventListener('click', function(){
-    location.reload();
+    content.style.display = 'flex';
+    content2.style.display = 'none';
+    // location.reload();
 })
