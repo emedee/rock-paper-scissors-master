@@ -1,7 +1,4 @@
 @media (max-width: 575.98px) {
-    .row{
-        width: auto !important;
-    }
     .body{
         margin: -10px !important;
     }
@@ -38,6 +35,7 @@
     .btn-playAgain{
         font-size: 8px !important;
         padding: 10px 20px !important;
+        width: 92px !important;
     }
     .result{
         margin: 25px 0px 0px !important;
@@ -76,12 +74,20 @@
         left: 10px !important;
         right: 15px !important;
     }
+    .close-rules{
+        font-size: 12px !important;
+    }
     .div-rules{
+        margin-top: 20px !important;
+        margin-bottom: 20px !important;
+        display: flex !important;
+        justify-content: center !important;
         width: 300px !important;
-        height: 170px !important;
+        height: 70px !important;
     }
     .rrl{
-        margin-left: 20% !important;
+        width: 100px !important;
+        height: 100px !important;
     }
     .select{
         margin: 0px 20px !important;
