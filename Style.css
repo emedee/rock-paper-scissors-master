@@ -9,9 +9,11 @@
     }
     .content{
         margin-top: 100px !important;
+        height: auto !important;
     }
     .content2{
         margin-top: 70px !important;
+        height: auto !important;
     }
     .rock{
         width: 4rem !important;
@@ -93,10 +95,13 @@
         margin: 0px 20px !important;
     }
 }
+body{
+    background-image: Radial-Gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+    height: 100vh;
+}
 .body{
     height: 100vh;
     width: auto;
-    background-image: Radial-Gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
     color: white;
 }
 h2{
