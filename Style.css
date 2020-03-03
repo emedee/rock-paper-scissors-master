@@ -75,7 +75,7 @@
     }
     .rules{
         position: fixed;
-        top: 0px !important;
+        top: 220px !important;
         left: 10px !important;
         right: 15px !important;
     }
@@ -88,11 +88,11 @@
         display: flex !important;
         justify-content: center !important;
         width: 300px !important;
-        height: 70px !important;
+        height: 200px !important;
     }
     .rrl{
-        width: 100px !important;
-        height: 100px !important;
+        width: 200px !important;
+        height: 200px !important;
     }
     .select{
         margin: 0px 20px !important;
