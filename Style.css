@@ -5,18 +5,42 @@
     .body{
         margin: -10px !important;
     }
-    .content{
-
-    }
     .paper, .scissors{
         width: 4rem !important;
         height: 4rem !important;
         bottom: 280px !important;
     }
+    .content{
+        margin-top: 100px !important;
+    }
+    .content2{
+        margin-top: 70px !important;
+    }
     .rock{
         width: 4rem !important;
         height: 4rem !important;
         bottom: 200px !important;
+    }
+    .rock-select-house,.rock-select, .scissors-select, .scissors-select-house,.paper-select-house, .paper-select{
+        width: 4rem !important;
+        height: 4rem !important;
+    }
+    .house-picked, .you-picked{
+        width: 7rem !important;
+        height: 7rem !important;
+    }
+    .selected-result{
+        font-size: 15px !important;
+    }
+    .footer{
+        margin-top: 50px !important;
+    }
+    .btn-playAgain{
+        font-size: 8px !important;
+        padding: 10px 20px !important;
+    }
+    .result{
+        margin: 25px 0px 0px !important;
     }
     .target, .target1{
         width: 18px;
@@ -58,6 +82,9 @@
     }
     .rrl{
         margin-left: 20% !important;
+    }
+    .select{
+        margin: 0px 20px !important;
     }
 }
 .body{
