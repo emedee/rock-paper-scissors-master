@@ -97,5 +97,4 @@ scissors.addEventListener('click', function(){
 playAgain.addEventListener('click', function(){
     content.style.display = 'flex';
     content2.style.display = 'none';
-    // location.reload();
 })
