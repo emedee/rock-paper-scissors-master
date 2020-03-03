@@ -13,11 +13,27 @@ let scissorsSelectHouse = document.querySelector('.scissors-select-house')
 let mySelection = document.querySelector('.you-picked');
 let content = document.querySelector('.content')
 let content2 = document.querySelector('.content2');
+let totalScore = document.querySelector('.count');
 let result = document.querySelector('.show-result');
 let playAgain = document.querySelector('.btn-playAgain');
 let loseOrWin = document.querySelector('.selected-result');
+let body = document.querySelector('body')
 let randomSelect = [rockSelectHouse, paperSelectHouse, scissorsSelectHouse]
 
+function increaseCount(){
+    var count = parseInt(document.querySelector('.count').value, 10);
+    count = isNaN(count) ? 12 : count;
+    count++;
+    document.querySelector('.count').value = count;
+    totalScore.innerHTML = count;  
+}
+function decreaseCount(){
+    var count = parseInt(document.querySelector('.count').value, 10);
+    count = isNaN(count) ? 12 : count;
+    count--;
+    document.querySelector('.count').value = count;
+    totalScore.innerHTML = count;  
+}
 btnRules.addEventListener('click', function(){
     rules.style.display = 'block';
 })
@@ -26,6 +42,7 @@ closeIcon.addEventListener('click', function(){
 })
 
 rock.addEventListener('click', function(){
+    rules.style.display = 'none';
     content.style.display = 'none';
     content2.style.display = 'flex';
     rockSelect.style.display = 'block';
@@ -37,18 +54,23 @@ rock.addEventListener('click', function(){
         loseOrWin.innerHTML = 'YOU LOSE'
         rockSelectHouse.style.display = 'none'
         scissorsSelectHouse.style.display = 'none'
+        result.style.display = 'flex';
+        decreaseCount();
     } else if (test == scissorsSelectHouse){
         loseOrWin.innerHTML = 'YOU WIN'
         rockSelectHouse.style.display = 'none'
         paperSelectHouse.style.display = 'none'
+        result.style.display = 'flex';
+        increaseCount();
+        
     } else {
         loseOrWin.innerHTML = 'TIE'
         paperSelectHouse.style.display = 'none'
         scissorsSelectHouse.style.display = 'none'
     }
-    result.style.display = 'flex';
 })
 paper.addEventListener('click', function(){
+    rules.style.display = 'none';
     content.style.display = 'none';
     content2.style.display = 'flex';
     rockSelect.style.display = 'none';
@@ -60,10 +82,12 @@ paper.addEventListener('click', function(){
         loseOrWin.innerHTML = 'YOU LOSE'
         rockSelectHouse.style.display = 'none'
         paperSelectHouse.style.display = 'none'
+        decreaseCount();
     } else if (test == rockSelectHouse){
         loseOrWin.innerHTML = 'YOU WIN'
         paperSelectHouse.style.display = 'none'
         scissorsSelectHouse.style.display = 'none'
+        increaseCount();
     } else {
         loseOrWin.innerHTML = 'TIE'
         scissorsSelectHouse.style.display = 'none'
@@ -72,6 +96,7 @@ paper.addEventListener('click', function(){
     result.style.display = 'block';
 })
 scissors.addEventListener('click', function(){
+    rules.style.display = 'none';
     content.style.display = 'none';
     content2.style.display = 'flex';
     rockSelect.style.display = 'none';
@@ -83,10 +108,12 @@ scissors.addEventListener('click', function(){
         loseOrWin.innerHTML = 'YOU LOSE'
         paperSelectHouse.style.display = 'none'
         scissorsSelectHouse.style.display = 'none'
+        decreaseCount();
     } else if (test == paperSelectHouse){
         loseOrWin.innerHTML = 'YOU WIN'
         rockSelectHouse.style.display = 'none'
         scissorsSelectHouse.style.display = 'none'
+        increaseCount();
     } else {
         loseOrWin.innerHTML = 'TIE'
         rockSelectHouse.style.display = 'none'
@@ -97,4 +124,5 @@ scissors.addEventListener('click', function(){
 playAgain.addEventListener('click', function(){
     content.style.display = 'flex';
     content2.style.display = 'none';
+    rules.style.display = 'none';
 })
