@@ -8,7 +8,7 @@
         margin-top: -290px !important;
     }
     .content{
-        margin-top: 100px !important;
+        margin-top: 85px !important;
         height: auto !important;
     }
     .content2{
@@ -56,9 +56,16 @@
         height: 15rem !important;
     }
     .score{
-        width: 4rem !important;
-        height: 3.5rem !important;
-        padding: 12px !important;
+        width: 3rem !important;
+        height: 3rem !important;
+        padding: 6px !important;
+        margin-top: -17px !important;
+    }
+    .p-score{
+        font-size: 10px;
+    }
+    .count{
+        font-size: 12px;
     }
     h3{
         font-size: 30px !important;
@@ -99,6 +106,7 @@
     }
     .header{
         padding-top: 10px !important;
+        height: 70px !important;
     }
 }
 body{
