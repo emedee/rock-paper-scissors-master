@@ -48,7 +48,7 @@ rock.addEventListener('click', function(){
     rockSelect.style.display = 'block';
     paperSelect.style.display = 'none';
     scissorsSelect.style.display = 'none';
-    var test = randomSelect[Math.floor(Math.random() * randomSelect.length)]
+    var test = randomSelect[Math.round(Math.floor(Math.random() * randomSelect.length))]
     test.style.display = 'block';
     if(test == paperSelectHouse){
         loseOrWin.innerHTML = 'YOU LOSE'
