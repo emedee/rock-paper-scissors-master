@@ -3,19 +3,19 @@
         margin: -10px !important;
     }
     .paper{
-        width: 5rem !important;
-        height: 5rem !important;
-        margin-top: -220px !important;
+        width: 4rem !important;
+        height: 4rem !important;
+        margin-top: -200px !important;
         margin-right: 10px !important;
     }
     .scissors{
-        width: 5rem !important;
-        height: 5rem !important;
-        margin-top: -220px !important;
+        width: 4rem !important;
+        height: 4rem !important;
+        margin-top: -200px !important;
         margin-left: 10px !important;
     }
     .content{
-        margin-top: 150px !important;
+        margin-top: 120px !important;
         height: auto !important;
     }
     .content2{
@@ -23,8 +23,8 @@
         height: auto !important;
     }
     .rock{
-        width: 5rem !important;
-        height: 5rem !important;
+        width: 4rem !important;
+        height: 4rem !important;
         /* bottom: 100px !important; */
     }
     .rock-select-house,.rock-select, .scissors-select, .scissors-select-house,.paper-select-house, .paper-select{
@@ -36,7 +36,7 @@
         height: 8rem !important;
     }
     .selected-result, .selected-result-two{
-        font-size: 30px !important;
+        font-size: 20px !important;
     }
     .footer{
         margin-left: 20px !important;
@@ -44,8 +44,8 @@
         margin-top: 100px !important;
     }
     .btn-playAgain, .btn-playAgain-two{
-        font-size: 15px !important;
-        padding: 15px 50px !important;
+        font-size: 12px !important;
+        padding: 10px 40px !important;
         /* width: 92px !important; */
         margin: 0px auto !important;
     }
@@ -53,12 +53,12 @@
         margin: 25px auto 0px !important;
     }
     .target, .target1{
-        width: 35px;
-        height: 38px;
+        width: 20px;
+        height: 25px;
     }
     .target2{
-        width: 35px;
-        height: 38px;
+        width: 20px;
+        height: 25px;
         margin-top: 1.5rem !important;
     }
     .bg-triangle{
