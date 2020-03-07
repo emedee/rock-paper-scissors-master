@@ -41,7 +41,8 @@
     .footer{
         margin-left: 20px !important;
         text-align: center !important;
-        margin-top: 100px !important;
+        margin-top: 70px !important;
+        padding-bottom: 0px !important;
     }
     .btn-playAgain, .btn-playAgain-two{
         font-size: 12px !important;
