@@ -25,7 +25,6 @@
     .rock{
         width: 4rem !important;
         height: 4rem !important;
-        /* bottom: 100px !important; */
     }
     .rock-select-house,.rock-select, .scissors-select, .scissors-select-house,.paper-select-house, .paper-select{
         width: 5rem !important;
@@ -47,7 +46,6 @@
     .btn-playAgain, .btn-playAgain-two{
         font-size: 12px !important;
         padding: 10px 40px !important;
-        /* width: 92px !important; */
         margin: 0px auto !important;
     }
     .result{
@@ -111,7 +109,6 @@
         margin-right: auto !important;
     }
     .div-close-rules{
-        margin-top: 30px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -129,17 +126,14 @@
         cursor: pointer;
     }
     .div-rules{
-        /* margin-top: 20px !important;
-        margin-bottom: 20px !important; */
         display: flex !important;
         justify-content: center !important;
-        /* width: 300px !important;
-        height: 200px !important; */
+        margin-top: 0px !important;
     }
     .rrl{
         width: 280px !important;
         height: 250px !important;
-        margin-top: 30px;
+        margin-top: 50px;
     }
     .select{
         margin: 0px 20px !important;
