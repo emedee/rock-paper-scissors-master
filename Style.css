@@ -2,13 +2,20 @@
     .body{
         margin: -10px !important;
     }
-    .paper, .scissors{
-        width: 4rem !important;
-        height: 4rem !important;
-        margin-top: -290px !important;
+    .paper{
+        width: 5rem !important;
+        height: 5rem !important;
+        margin-top: -220px !important;
+        margin-right: 10px !important;
+    }
+    .scissors{
+        width: 5rem !important;
+        height: 5rem !important;
+        margin-top: -220px !important;
+        margin-left: 10px !important;
     }
     .content{
-        margin-top: 85px !important;
+        margin-top: 200px !important;
         height: auto !important;
     }
     .content2{
@@ -16,50 +23,54 @@
         height: auto !important;
     }
     .rock{
-        width: 4rem !important;
-        height: 4rem !important;
-        bottom: 200px !important;
+        width: 5rem !important;
+        height: 5rem !important;
+        /* bottom: 100px !important; */
     }
     .rock-select-house,.rock-select, .scissors-select, .scissors-select-house,.paper-select-house, .paper-select{
-        width: 4rem !important;
-        height: 4rem !important;
+        width: 5rem !important;
+        height: 5rem !important;
     }
     .house-picked, .you-picked{
-        width: 7rem !important;
-        height: 7rem !important;
+        width: 8rem !important;
+        height: 8rem !important;
     }
-    .selected-result{
-        font-size: 15px !important;
+    .selected-result, .selected-result-two{
+        font-size: 30px !important;
     }
     .footer{
-        margin-top: 50px !important;
+        margin-left: 20px !important;
+        text-align: center !important;
+        margin-top: 100px !important;
     }
-    .btn-playAgain{
-        font-size: 8px !important;
-        padding: 10px 20px !important;
-        width: 92px !important;
+    .btn-playAgain, .btn-playAgain-two{
+        font-size: 15px !important;
+        padding: 15px 50px !important;
+        /* width: 92px !important; */
+        margin: 0px auto !important;
     }
     .result{
-        margin: 25px 0px 0px !important;
+        margin: 25px auto 0px !important;
     }
     .target, .target1{
-        width: 18px;
-        height: 20px;
+        width: 35px;
+        height: 38px;
     }
     .target2{
-        width: 18px;
-        height: 20px;
+        width: 35px;
+        height: 38px;
         margin-top: 1.5rem !important;
     }
     .bg-triangle{
-        width: 15rem !important;
-        height: 15rem !important;
+        width: 10rem !important;
+        height: 10rem !important;
     }
     .score{
         width: 3rem !important;
         height: 2.6rem !important;
         padding: 6px !important;
         margin-top: -13px !important;
+        border-radius: 5px !important;
     }
     .p-score{
         font-size: 10px;
@@ -81,32 +92,59 @@
     .row{
         height: auto !important;
         width: 18rem !important;
+        border-radius: 5px !important;
     }
     .rules{
-        position: fixed;
-        top: 110px !important;
-        left: 10px !important;
-        right: 15px !important;
+        position: static !important;
+        height: 100vh !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
     }
     .close-rules{
-        font-size: 12px !important;
+        font-size: 25px !important;
+        font-weight: bolder;
+        color: rgba(4, 4, 34, 0.664) !important;
+    }
+    .roww{
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+    .div-close-rules{
+        margin-top: 80px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .fa-close{
+        display: none !important;
+    }
+    .close-icon{
+        display: block !important;
+        text-align: center;
+        margin-top: auto;
+        font-size: 25px !important;
+        color: rgba(95, 93, 93, 0.438) !important;
+    }
+    .close-icon:hover{
+        cursor: pointer;
     }
     .div-rules{
-        margin-top: 20px !important;
-        margin-bottom: 20px !important;
+        /* margin-top: 20px !important;
+        margin-bottom: 20px !important; */
         display: flex !important;
         justify-content: center !important;
-        width: 300px !important;
-        height: 200px !important;
+        /* width: 300px !important;
+        height: 200px !important; */
     }
     .rrl{
-        width: 200px !important;
-        height: 200px !important;
+        width: 280px !important;
+        height: 250px !important;
+        margin-top: 70px;
     }
     .select{
         margin: 0px 20px !important;
     }
     .header{
+        margin-top: 30px !important;
         padding-top: 10px !important;
         height: 70px !important;
     }
@@ -351,13 +389,16 @@ button{
 .show-result{
     display: none;
 }
-.result{
+.show-result-two{
+    display: none;
+}
+.result, .result-two{
     display: flex;
     flex-direction: column;
     text-align: center;
     margin: 0px 70px;
 }
-.btn-playAgain{
+.btn-playAgain, .btn-playAgain-two{
     font-weight: bold;
     cursor: pointer;
     color: hsl(237, 49%, 15%);
