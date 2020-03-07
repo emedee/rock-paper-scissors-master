@@ -95,6 +95,8 @@
     }
     .rules{
         position: static !important;
+        display: flex !important;
+        justify-content: flex-start !important;
         height: 100vh !important;
         margin-left: auto !important;
         margin-right: auto !important;
@@ -118,7 +120,7 @@
     .close-icon{
         display: block !important;
         text-align: center;
-        margin-top: auto;
+        margin-top: 100%;
         font-size: 25px !important;
         color: rgba(95, 93, 93, 0.438) !important;
     }
